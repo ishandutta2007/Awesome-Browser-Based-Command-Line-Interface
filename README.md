@@ -25,7 +25,7 @@
 ---
 
 ### 📌 Overview & SEO Summary 🔍
-Welcome to the ultimate curated directory of **browser-based command line interfaces**, **cloud shells**, **cloud development environments (CDE)**, and **open-source web terminal engines**. Whether you are evaluating enterprise cloud shell platforms (such as *Microsoft Azure Cloud Shell*, *GitHub Codespaces*, *AWS CloudShell*, and *Google Cloud Shell*), developer environments (*Replit*, *StackBlitz*, *Daytona*), or self-hosted open-source web terminals (*xterm.js*, *ttyd*, *Gotty*, *wetty*, *Kasm Workspaces*, *termview*), this guide covers features, pricing, free tier limits, company market cap/valuation, and star counts for open-source repositories.
+Welcome to the ultimate curated directory of **browser-based command line interfaces**, **cloud shells**, **cloud development environments (CDE)**, and **open-source web terminal engines**. Whether you are evaluating enterprise cloud shell platforms (such as *Microsoft Azure Cloud Shell*, *GitHub Codespaces*, *AWS CloudShell*, and *Google Cloud Shell*), developer environments (*Replit*, *StackBlitz*, *Daytona*), or self-hosted open-source web terminals (*xterm.js*, *ttyd*, *Gotty*, *wetty*, *Kasm Workspaces*, *termview*), this guide covers features, pricing, free tier limits, company market cap/valuation, and Stars_Counts for open-source repositories.
 
 ---
 
@@ -68,7 +68,7 @@ The browser-based CLI and cloud environment market offers both free provider clo
 
 ## 🔓 Open-Source GitHub Projects 🌐
 
-*Sorted by GitHub Star Count (Descending)* 🌟
+*Sorted by GitHub Stars_Count (Descending)* 🌟
 
 - **[xterm.js](https://github.com/xtermjs/xterm.js)** [![Stars](https://img.shields.io/github/stars/xtermjs/xterm.js?style=social&color=white)](https://github.com/xtermjs/xterm.js/stargazers)  
   **The standard front-end terminal component for the web** written in TypeScript. Powers VS Code, Windows Terminal, Hyper, and hundreds of web terminals. Supports WebGL rendering, canvas fallback, ANSI colors, and PTY bindings. ⚡ 💻
@@ -111,7 +111,7 @@ Contributions are welcome! Follow these steps to submit new browser-based CLI pl
 
 1. 🍴 **Fork** the repository.
 2. 📝 **Add/edit** entries in `README.md` maintaining table/list structure and formatting.
-3. 🔗 Include project title, official website/GitHub link, exact star count, license, and brief description.
+3. 🔗 Include project title, official website/GitHub link, exact Stars_Count, license, and brief description.
 4. 🚀 Submit a **Pull Request** with a descriptive summary of your changes.
 
 ---
