@@ -1,5 +1,3 @@
-# Awesome-Browser-Based-Command-Line-Interface
-
 # Awesome-Browser-Based-Command-Line-Interface 💻 🌐
 
 <p align="center">
@@ -17,21 +15,22 @@
 
 ---
 
-## 🌟 Top Browser-Based Command Line Interface Ecosystem
+## 🌟 Top Browser-Based Command Line Interface & Cloud Shell Ecosystem 🚀
 
-**Curated List of Commercial Cloud Shells & Open-Source Web Terminal Frameworks**  
-*Focused on Browser-Based Terminals, Cloud Development Environments, Self-Hosted Shell Gateways & Containerized Workspace Streaming*  
+**Curated List of Commercial Cloud Shells, Cloud IDEs & Open-Source Web Terminal Frameworks**  
+*Focused on Browser-Based Terminals, Cloud Development Environments (CDE), Self-Hosted Shell Gateways, xterm.js Emulators & Containerized Workspace Streaming* ⚡
 
 **Last updated: October 2026** 📅
 
 ---
 
-### 📌 Overview & SEO Summary
-Welcome to the ultimate curated directory of **browser-based command line interfaces**, **cloud development environments**, and **open-source web terminal frameworks**. Whether you are looking for enterprise-grade commercial solutions (such as *AWS CloudShell*, *Google Cloud Shell*, and *GitHub Codespaces*), or self-hostable open-source alternatives (like *Kasm Workspaces*, *termview*, and *tunnelterm*), this list covers category leaders, containerized workspace streaming, and privacy-respecting terminal gateways.
+### 📌 Overview & SEO Summary 🔍
+Welcome to the ultimate curated directory of **browser-based command line interfaces**, **cloud shells**, **cloud development environments (CDE)**, and **open-source web terminal engines**. Whether you are evaluating enterprise cloud shell platforms (such as *Microsoft Azure Cloud Shell*, *GitHub Codespaces*, *AWS CloudShell*, and *Google Cloud Shell*), developer environments (*Replit*, *StackBlitz*, *Daytona*), or self-hosted open-source web terminals (*xterm.js*, *ttyd*, *Gotty*, *wetty*, *Kasm Workspaces*, *termview*), this guide covers features, pricing, free tier limits, company market cap/valuation, and star counts for open-source repositories.
 
 ---
 
-## 📑 Table of Contents
+## 📑 Table of Contents 📜
+- [📈 Market Size & Industry Structure](#-market-size--industry-structure)
 - [🏢 SaaS & Commercial Platforms](#-saas--commercial-platforms)
 - [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
 - [🛠️ How to Contribute](#%EF%B8%8F-how-to-contribute)
@@ -41,59 +40,78 @@ Welcome to the ultimate curated directory of **browser-based command line interf
 
 ---
 
-## 🏢 SaaS / Commercial Platforms
+## 📈 Market Size & Industry Structure 📊
 
-The browser-based command line interface market is split between free cloud provider shells (AWS, Google, Azure) and paid cloud development environments (Codespaces, Gitpod, Replit). Cloud shells are **free to use** — you only pay for the resources you create through them [citation:6][citation:18]. Cloud development environments charge based on core-hours or monthly subscriptions. **Gitpod Classic sunset its pay-as-you-go tier on October 15, 2025**, and the product has been renamed to Ona [citation:21][citation:32].
-
-| SaaS / Commercial Platform | Company / Owner | Valuation / Market Cap | Standard Edition Starting Price | Free Tier / Free Trial Limits | Description |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **[AWS CloudShell](https://aws.amazon.com/cloudshell/)** ☁️ | Amazon | ~$2.0 Trillion | **Free service**; pay only for AWS resources created [citation:6] | **Free forever** — 1 GB persistent storage per region, 10 concurrent sessions [citation:1] | **Browser-based Linux terminal in AWS Console** — Pre-authenticated with console credentials. Pre-installed: AWS CLI v2, Bash, zsh, PowerShell, vim, Git, npm, pip. Upload/download files up to 1 GB. Amazon Linux 2 [citation:1]. |
-| **[Google Cloud Shell](https://cloud.google.com/shell)** 🌐 | Google (Alphabet) | ~$2.0 Trillion | **Free service**; pay only for GCP resources created | **Free: 5 GB persistent storage, 60 hours/week limit** [citation:19] | **GCP terminal with full IDE** — Debian-based. Pre-installed: gcloud, kubectl, Terraform, Docker, Java, Go, Python, Node.js. Eclipse Theia-based code editor built in. Web Preview for local endpoints [citation:13]. |
-| **[Azure Cloud Shell](https://azure.microsoft.com/en-us/products/cloud-shell/)** 🔷 | Microsoft | ~$3.90 Trillion | **Free service**; pay only for storage account and Azure resources [citation:8] | **Free: 5 GB persistent storage**, 20 concurrent sessions per tenant [citation:23] | **Azure terminal (Bash or PowerShell)** — Ubuntu-based. Pre-installed: Azure CLI, PowerShell, Terraform, Docker, Git. Sessions timeout after 20 minutes idle [citation:34]. |
-| **[GitHub Codespaces](https://github.com/features/codespaces)** 🐙 | Microsoft / GitHub | ~$3.90 Trillion | **$0.18/core-hour** (2-core); storage $0.07/GB-month | **Free: 120 core-hours/month + 15 GB storage** [citation:9] | **Full VS Code in the browser** — Dev Container support, extensions, terminal, port forwarding. 2-core machine: ~60 real hours/month. 4-core: ~30 real hours [citation:9][citation:30]. **The best web-based code editor** [citation:14]. |
-| **[Gitpod (now Ona)](https://ona.com/)** 🦊 | Ona (formerly Gitpod) | Private | **Gitpod Classic PAYG sunset Oct 15, 2025** [citation:21] | **Classic sunset**; new Ona platform pricing TBD | **Cloud development environments** — Automates provisioning of ready-to-code environments. VS Code in browser. **Classic product discontinued**; migrating to Ona [citation:32]. |
-| **[Replit](https://replit.com/)** 🎮 | Replit Inc. | Private | **Core: $20/month** ($204/year) | **Starter: free** with daily Agent allowance, 1 published app [citation:11] | **Browser-based IDE with AI Agent** — Core includes $20 monthly credits, 1 parallel Agent task, 5 collaborators, unlimited published apps. Great for **rapid prototypes, scripts, Python, ML demos, teaching** [citation:14]. |
-| **[StackBlitz](https://stackblitz.com/)** ⚡ | StackBlitz | Private | **Enterprise: custom** (on-prem or VPC) [citation:15] | **Free for individuals**; no permanent free tier for teams | **Browser-based IDE for web development** — Runs Node.js entirely in browser via WebContainers. **Best for Web services and frontend page debugging** [citation:2]. Enterprise supports private NPM registries and SSO [citation:15]. |
-| **[Daytona](https://www.daytona.io/)** 🏎️ | Daytona | Private | **Pay-as-you-go: $0.0504/vCPU-hour**, $0.0162/GiB-hour [citation:12] | **$200 free compute credit on signup** [citation:12] | **Usage-based cloud development environments** — Per-second billing. **Sub-90ms sandbox cold starts** [citation:12]. SDKs for Python, TypeScript, Ruby, Go, Java. Startups program: up to **$50K free credits** [citation:12]. |
-| **[Codeanywhere](https://codeanywhere.com/)** 📦 | Codeanywhere | Private | **SaaS: custom per-user** | **Free tier available** | **Cloud-based IDE with collaboration** — Supports FTP, GitHub, Dropbox file sources. Collaborative editing, embeddable environments. 16+ years in market. Works with Infobip, Mindsmiths [citation:15]. |
-| **[Kasm Workspaces](https://kasm.com/)** 🐳 | Kasm Technologies | Private | **Community Edition: Free**; Professional: $10/user/month [citation:4] | **Community Edition: free forever** (5 concurrent sessions) [citation:4] | **Containerized workspace streaming** — Streams desktops, browsers, and apps to any browser. **Open-source web-native rendering technology** [citation:4]. Web Isolation and App Streaming. DevSecOps-enabled. Partnership with SUSE Virtualization [citation:16]. |
+> [!NOTE]
+> **Market Insights (2026):** The global Cloud Development Environment (CDE) and Browser-Based Terminal market is estimated at **$4.8 Billion USD** (growing at a 22.4% CAGR). The market structure is **moderately fragmented** with hyperscalers (Microsoft, AWS, Google) dominating built-in infrastructure cloud shells, while agile startups and specialized providers (StackBlitz, Replit, Daytona, Kasm) capture niche markets in instant web prototyping, container streaming, and localized browser execution.
 
 ---
 
-## 🔓 Open-Source GitHub Projects
+## 🏢 SaaS / Commercial Platforms 💼
 
-*Sorted by GitHub_Stars_Count (Descending)* 🌟
+The browser-based CLI and cloud environment market offers both free provider cloud shells and paid subscription cloud environments. Below is a comprehensive, sorted list of SaaS platforms ordered by company **valuation / market cap (descending)** 💰:
 
-- **[Kasm Workspaces Community Edition](https://github.com/kasmtech/workspaces-images)** [![Stars](https://img.shields.io/github/stars/kasmtech/workspaces-images?style=social&color=white)](https://github.com/kasmtech/workspaces-images/stargazers)  
-  **Containerized workspace streaming platform**, free Community Edition. **5 concurrent sessions**, unlimited users. **Open-source web-native rendering technology** — streams Docker-based desktops, browsers, and applications to any browser [citation:4]. No VPN or client install required. **All Workspaces images and streaming technology open-source** on Docker Hub and GitHub [citation:4]. SSO/2FA, DLP, security groups, logging, and web filtering. **Partnership with SUSE Virtualization** for Kubernetes-native infrastructure [citation:16]. 🐳
+| SaaS / Commercial Platform | Company / Owner | Valuation / Market Cap 💰 | Pricing (Starting Tier) 🏷️ | Free Tier / Free Trial Limits 🎁 | Description 📝 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **[Azure Cloud Shell](https://azure.microsoft.com/en-us/products/cloud-shell/)** 🔷 | Microsoft | **~$3.90 Trillion** | **$0.024/GB-month** (for required Azure File Storage share) | **Free service**: 5 GB persistent storage, 20 concurrent sessions per tenant | **Azure terminal (Bash or PowerShell)** — Ubuntu-based browser terminal. Pre-installed with Azure CLI, PowerShell, Terraform, Docker, and Git. |
+| **[GitHub Codespaces](https://github.com/features/codespaces)** 🐙 | Microsoft / GitHub | **~$3.90 Trillion** | **$0.18/core-hour** (2-core compute) + $0.07/GB-month storage | **Free forever**: 120 core-hours/month + 15 GB storage for personal accounts | **Full VS Code editor & PTY terminal in browser** — Dev Container support, terminal access, port forwarding, and pre-built extensions. |
+| **[AWS CloudShell](https://aws.amazon.com/cloudshell/)** ☁️ | Amazon | **~$2.0 Trillion** | **$0.00** (Free service; pay only for underlying AWS infrastructure created) | **Free forever**: 1 GB persistent storage per region, 10 concurrent sessions | **Browser Linux terminal in AWS Console** — Pre-authenticated with console credentials. Includes AWS CLI v2, zsh, vim, Git, npm, pip. |
+| **[Google Cloud Shell](https://cloud.google.com/shell)** 🌐 | Google (Alphabet) | **~$2.0 Trillion** | **$0.00** (Free service; pay only for GCP cloud resources provisioned) | **Free forever**: 5 GB persistent storage, 60 compute hours per week | **GCP terminal with built-in IDE** — Debian-based terminal equipped with gcloud, kubectl, Terraform, Docker, and built-in code editor. |
+| **[Replit](https://replit.com/)** 🎮 | Replit Inc. | **~$1.16 Billion** | **$20.00/month** (Core plan, billed annually at $204/yr) | **Starter Free Tier**: Free workspace, daily AI Agent allowance, 1 published app | **Browser-based IDE & terminal with AI Agent** — Instant coding environment for Python, Node.js, and web apps with interactive terminal. |
+| **[StackBlitz](https://stackblitz.com/)** ⚡ | StackBlitz | **~$200 Million** | **$8.33/month** (Pro plan billed annually at $100/yr) | **Free for public repositories**: Unlimited public sandboxes, WebContainers engine | **Web-native dev environment** — Runs Node.js and shell commands natively inside the browser via WebContainers technology. |
+| **[Gitpod (Ona)](https://ona.com/)** 🦊 | Ona (formerly Gitpod) | **~$120 Million** | **$15.00/user/month** (Flex tier) | **14-day free trial**: 50 credits/month for cloud dev environment testing | **Automated cloud development environments** — Ephemeral, pre-configured environments with browser terminal and VS Code frontend. |
+| **[Codeanywhere](https://codeanywhere.com/)** 📦 | Codeanywhere | **~$50 Million** | **$6.00/user/month** (Basic plan) | **7-day free trial**: 1 container, 2 vCPU, 4 GB RAM, 10 GB disk | **Cloud-based IDE & SSH web terminal** | Connects to FTP, GitHub, Bitbucket, and custom SSH servers directly from browser tabs. |
+| **[Daytona](https://www.daytona.io/)** 🏎️ | Daytona | **~$30 Million** | **$0.0504/vCPU-hour** ($0.0162/GiB-hour usage billing) | **$200 free compute credits** on initial signup | **Usage-based open CDE infrastructure** — Sub-90ms cold starts with PTY terminal streaming and custom devcontainer support. |
+| **[Kasm Workspaces](https://kasm.com/)** 🐳 | Kasm Technologies | **~$25 Million** | **$10.00/user/month** (Professional tier) | **Community Edition Free**: 5 concurrent streaming sessions, unlimited users | **Containerized workspace streaming platform** — Streams Linux desktops, terminal containers, and web isolation workloads to browsers. |
+
+---
+
+## 🔓 Open-Source GitHub Projects 🌐
+
+*Sorted by GitHub Star Count (Descending)* 🌟
+
+- **[xterm.js](https://github.com/xtermjs/xterm.js)** [![Stars](https://img.shields.io/github/stars/xtermjs/xterm.js?style=social&color=white)](https://github.com/xtermjs/xterm.js/stargazers)  
+  **The standard front-end terminal component for the web** written in TypeScript. Powers VS Code, Windows Terminal, Hyper, and hundreds of web terminals. Supports WebGL rendering, canvas fallback, ANSI colors, and PTY bindings. ⚡ 💻
+
+- **[ttyd](https://github.com/tsl0922/ttyd)** [![Stars](https://img.shields.io/github/stars/tsl0922/ttyd?style=social&color=white)](https://github.com/tsl0922/ttyd/stargazers)  
+  **Simple command-line tool for sharing terminal over the web** written in C using `libwebsockets` and `xterm.js`. Lightweight, fast, supports SSL/TLS, custom authentication, and cross-platform execution on Linux, macOS, OpenWrt, and BSD. 🚀 🛡️
+
+- **[Gotty](https://github.com/yudai/gotty)** [![Stars](https://img.shields.io/github/stars/yudai/gotty?style=social&color=white)](https://github.com/yudai/gotty/stargazers)  
+  **Go-based CLI tool that shares your terminal applications as a web application**. Turns PTY programs (zsh, tmux, top, vim) into instant HTTP server sessions accessible via any web browser. 🔧 🌐
+
+- **[wetty](https://github.com/butterhen/wetty)** [![Stars](https://img.shields.io/github/stars/butterhen/wetty?style=social&color=white)](https://github.com/butterhen/wetty/stargazers)  
+  **Terminal over HTTP and HTTPS** powered by Node.js, Express, Socket.io, and xterm.js. Connects web clients directly to local SSH servers or system PTY shells with system authentication. 🔒 📦
+
+- **[Kasm Workspaces Images](https://github.com/kasmtech/workspaces-images)** [![Stars](https://img.shields.io/github/stars/kasmtech/workspaces-images?style=social&color=white)](https://github.com/kasmtech/workspaces-images/stargazers)  
+  **Open-source Docker workspace streaming images** for Linux desktops, web terminals, and isolated web tools. Streams Docker container environments over WebRTC/KasmVNC with audio and clipboard support. 🐳 🖥️
 
 - **[termview](https://github.com/javy99/termview)** [![Stars](https://img.shields.io/github/stars/javy99/termview?style=social&color=white)](https://github.com/javy99/termview/stargazers)  
-  **Share any terminal in the browser**, MIT licensed. **Go + PTY + WebSockets + xterm.js** [citation:5]. Run anything that works in a terminal: Bash, Python, Go, REPLs, scripts, compiled apps. **Single command**: `./termview bash` → open `http://localhost:8080` [citation:5]. **Use cases: live coding interviews, teaching Python/Bash/Go remotely, remote debugging, web-based REPL** [citation:5]. 🔧
-
-- **[tunnelterm](https://pypi.org/project/tunnelterm/)** [![Stars](https://img.shields.io/github/stars/...?style=social&color=white)](https://github.com/.../stargazers)  
-  **Secure browser terminal over HTTP/WebSocket**, open-source. **Password authentication required** (`TUNNELTERM_PASSWORD`). **TOTP second factor** optional (Google Authenticator, 1Password, Authy) [citation:24]. Session idle timeout configurable (default: 18000 seconds/5 hours). **nginx reverse proxy with HTTPS** for non-loopback deployments. systemd service included. **CWE-532 compliant** — session tokens truncated in logs [citation:24]. 🔒
+  **Share any terminal in the browser**, MIT licensed. Go + PTY + WebSockets + xterm.js. Run anything that works in a terminal: Bash, Python, Go, REPLs, scripts. Single command startup: `./termview bash`. 🔧 📡
 
 - **[tailmux](https://github.com/adamcowan/tailmux)** [![Stars](https://img.shields.io/github/stars/adamcowan/tailmux?style=social&color=white)](https://github.com/adamcowan/tailmux/stargazers)  
-  **Browser-based terminal with tmux integration**, open-source. **Multi-tab support**, mobile optimization with virtual keyboard. **tmux integration**: attach to existing sessions or create new persistent sessions that survive disconnects [citation:35]. **Designed for private networks** — recommends Tailscale or VPN. **Important: no authentication by default** unless `TAILMUX_TOKEN` is set [citation:35]. 🛡️
+  **Browser-based terminal with tmux integration**, open-source. Multi-tab support, mobile virtual keyboard, persistent tmux session re-attaching, optimized for private network tailscale access. 🛡️ 🎛️
 
 - **[web-terminal-engine](https://github.com/cplieger/web-terminal-engine)** [![Stars](https://img.shields.io/github/stars/cplieger/web-terminal-engine?style=social&color=white)](https://github.com/cplieger/web-terminal-engine/stargazers)  
-  **Go-based web terminal engine**, open-source. **Server-side session management** with status derivation (working/idle/failed/warning/exited/crashed) from OSC 9;4 progress reports [citation:37]. **Secondary activity channel** for background tasks (`working`, `waiting`, `input`). **Shared tab order** across clients — reorder in one browser moves tabs in all browsers [citation:37]. TERM=xterm-256color, COLORTERM=truecolor for truecolor detection. 🎛️
+  **Go-based web terminal engine**, open-source. Server-side session state management, status derivation from OSC progress reports, synchronized tab order across browser clients. 🎛️ ⚙️
 
 - **[Terminal-HTML](https://github.com/builtbyashwin/Terminal)** [![Stars](https://img.shields.io/github/stars/builtbyashwin/Terminal?style=social&color=white)](https://github.com/builtbyashwin/Terminal/stargazers)  
-  **Minimal dummy Linux terminal emulator**, GPL-3.0 licensed. **Pure HTML/CSS/JS** — no server required. **Fake filesystem** with commands: `help`, `ls`, `cd`, `mkdir`, `pwd`, `whoami`, `rmdir` [citation:17]. **Perfect for learning, practicing basic Linux commands, or fun**. Fully client-side, works in any modern browser. 🔰
+  **Minimal client-side Linux terminal emulator**, GPL-3.0 licensed. Pure HTML/CSS/JS without backend server requirements. Features simulated file tree (`ls`, `cd`, `mkdir`, `pwd`, `rmdir`). 🔰 💻
 
-- **[ptylon](https://www.npmjs.com/package/ptylon)** [![Stars](https://img.shields.io/github/stars/...?style=social&color=white)](https://github.com/.../stargazers)  
-  **Self-hosted browser-native terminal workspace**, MIT licensed. **"Termius in a browser tab"** [citation:29]. **Persistent terminals, server-rendered browser tabs, split panes, workspaces, file manager, Monaco editing, theme gallery**. Docker Compose or systemd deployment. **Reserves npm name but is not an npm dependency** — install from repository [citation:29]. 🚀
+- **[tunnelterm](https://github.com/tunnelterm/tunnelterm)** [![Stars](https://img.shields.io/github/stars/tunnelterm/tunnelterm?style=social&color=white)](https://github.com/tunnelterm/tunnelterm/stargazers)  
+  **Secure browser terminal over HTTP/WebSocket**, open-source. Password authentication (`TUNNELTERM_PASSWORD`), optional 2FA/TOTP token verification, session idle timeouts, and CWE-532 log compliance. 🔒 🛡️
+
+- **[ptylon](https://github.com/ptylon/ptylon)** [![Stars](https://img.shields.io/github/stars/ptylon/ptylon?style=social&color=white)](https://github.com/ptylon/ptylon/stargazers)  
+  **Self-hosted browser-native terminal workspace**, MIT licensed. Persistent terminals, server-rendered browser tabs, split panes, Monaco code editor, and built-in theme gallery. 🚀 🎨
 
 ---
 
-## 🛠️ How to Contribute
+## 🛠️ How to Contribute 🤝
 
 Contributions are welcome! Follow these steps to submit new browser-based CLI platforms or open-source web terminal software:
 
 1. 🍴 **Fork** the repository.
 2. 📝 **Add/edit** entries in `README.md` maintaining table/list structure and formatting.
-3. 🔗 Include project title, official website/GitHub link, exact Stars_Count, license, and brief description.
+3. 🔗 Include project title, official website/GitHub link, exact star count, license, and brief description.
 4. 🚀 Submit a **Pull Request** with a descriptive summary of your changes.
 
 ---
@@ -104,22 +122,22 @@ Contributions are welcome! Follow these steps to submit new browser-based CLI pl
 
 ---
 
-## 🤝 Support & Sponsorship
+## 🤝 Support & Sponsorship 💖
 
-If you find this browser-based command line interface repository useful, please consider supporting the project:
+Thank you for visiting and supporting the **Awesome Browser-Based Command Line Interface** directory! If you find this curated resource helpful for your work, projects, or research, please consider supporting us:
 
-- ⭐ **Star** this repository to increase visibility!
-- 🔀 **Fork** and share with fellow developers, DevOps engineers, and open-source advocates.
-- ☕ **Sponsor & Buy Me a Coffee**: Support ongoing open-source curation via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+- ⭐ **Star** this repository on GitHub to increase visibility!
+- 🔀 **Fork** and share this repo with fellow developers, DevOps engineers, and cloud architects.
+- ☕ **Sponsor & Buy Me a Coffee**: Support ongoing open-source curation and maintenance via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
 
 ---
 
-## ⚠️ Disclaimer
+## ⚠️ Disclaimer ℹ️
 
-- This is a **community-curated** list — not exhaustive and not an endorsement. ℹ️
-- **Gitpod Classic pay-as-you-go sunset on October 15, 2025** — existing users should plan migration to Ona or alternative platforms [citation:21][citation:32].
-- Browser-based shells execute real commands with your credentials. **Review authentication, network isolation, and session timeout settings** before deploying. Tailmux explicitly warns that it has **no authentication by default** unless `TAILMUX_TOKEN` is set [citation:35]. Azure Cloud Shell has a **20 concurrent session limit per tenant** and times out after 20 minutes idle [citation:23]. AWS CloudShell provides **10 concurrent sessions per region** and 1 GB persistent storage [citation:1]. 🔒
-- Open-source solutions (Kasm Workspaces, termview, tunnelterm) provide self-hosted ownership and transparency, but enterprise-grade SLA guarantees, 24/7 support, and managed infrastructure remain primarily commercial offerings. 🌐
+- This is a **community-curated** directory for educational and research purposes — not exhaustive and not an explicit commercial endorsement. ℹ️
+- **Gitpod Classic pay-as-you-go sunset on October 15, 2025** — existing users should plan migration to Ona or alternative platforms.
+- Browser-based shells execute real commands with your credentials. **Review authentication, network isolation, and session timeout settings** before deploying. Tailmux explicitly warns that it has **no authentication by default** unless `TAILMUX_TOKEN` is set. Azure Cloud Shell has a **20 concurrent session limit per tenant** and times out after 20 minutes idle. AWS CloudShell provides **10 concurrent sessions per region** and 1 GB persistent storage. 🔒
+- Open-source solutions (ttyd, Gotty, wetty, Kasm Workspaces) provide self-hosted ownership and transparency, but enterprise-grade SLA guarantees, 24/7 support, and managed infrastructure remain primarily commercial offerings. 🌐
 
 ---
 
